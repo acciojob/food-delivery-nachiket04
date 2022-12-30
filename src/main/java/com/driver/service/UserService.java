@@ -2,11 +2,16 @@ package com.driver.service;
 
 import java.util.List;
 
+import com.driver.model.request.UserDetailsRequestModel;
+import com.driver.model.response.UserResponse;
 import com.driver.shared.dto.UserDto;
+import org.springframework.stereotype.Service;
 
 /**
  * Handle exception cases for all methods which throw Exception
  */
+
+@Service
 public interface UserService{
 
 	UserDto createUser(UserDto user) throws Exception;
